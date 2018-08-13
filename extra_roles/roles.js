@@ -99,11 +99,11 @@
 
     function intToRGB(i){
         var c = (i & 0x00FFFFFF)
-            .toString(16)
-            .toUpperCase();
-
-        return "00000".substring(0, 6 - c.length) + c;
+        .toString(16)
+        .toUpperCase();
+        return "00000".substring(0, 6 - c.length) + c
     }
+
     function p(A) {
         if (A) {
             A = A.slice(0, 5);
@@ -261,3 +261,7 @@ AWSC.jQuery("#nav-usernameMenu").on("click", function(event) {
         }
     // },250)
 });
+
+
+AWSC.jQuery("#awsgnav .nav-menu .awsc-switched-role-username-wrapper .nav-elt-label")[0].style.color = "#fff";
+AWSC.jQuery("#awsgnav .nav-menu .awsc-switched-role-username-wrapper .nav-elt-label")[0].style.textShadow = '#232f3e 0 0 2px';
