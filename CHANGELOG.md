@@ -1,13 +1,13 @@
 # Changelog
 
-## 2018-aug-2 (v2.4)
-* Bug fix for users with one IAM role in the SAML claim. Bug was introduced with release 2.1, but according to user reports only results in an error starting with Chrome release 68.
+## 2018-07-16
+* Set the duration based on the AWS CLI duration
+* Updated colors to be of an acceptable lumens for use with black text 
 
-## 2018-may-14 (v2.3)
-* Release 2.2 revealed many users have their SAML provider requesting a SessionDuration which is higher than the maximum session duration configured at the IAM Role. Release 2.3 now supports manually enabling or disabling this SessionDuration feature. The feature is enabled by default, but can be disabled in the options.
-
-## 2018-may-12 (v2.2)
-* Now supports the SessionDuration SAML attribute which can be set by your IDP administrator. This can keep your credentials valid longer than the default 1 hour. Thanks to [Jeroen](https://github.com/ashemedai) for his contribution!
+## 2018-05-04
+* Override the recently used list of roles
+* Random color choosen based on hash of account id
+* Updated readme with better instructions
 
 ## 2017-nov-01 (v2.1)
 * Bug fix: Chrome 62 broke the extension. Special thanks for [Brice](https://github.com/bdruth) for contributing. Thanks to [Gijs](https://gitlab.com/gbvanrenswoude) for helping out with testing.
