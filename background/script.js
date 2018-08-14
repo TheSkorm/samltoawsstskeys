@@ -90,9 +90,9 @@ function onBeforeRequestEvent(details) {
   if (details.requestBody.formData) {
     SAMLAssertion = details.requestBody.formData.SAMLResponse[0];
     if ("roleIndex" in details.requestBody.formData) {
-      hasRoleIndex = true;
-      roleIndex = details.requestBody.formData.roleIndex[0];
-    }
+        hasRoleIndex = true;
+        roleIndex = details.requestBody.formData.roleIndex[0];
+      }
   } else if (formDataPayload) {
     SAMLAssertion = formDataPayload.get('SAMLResponse');
     roleIndex = formDataPayload.get('roleIndex');
